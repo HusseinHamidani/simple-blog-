@@ -1,0 +1,143 @@
+$mainColor: #a516e7
+$fontColor: #ffffff
+$fontType: 'Poppins', sans-serif
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    list-style: none
+    text-decoration: none
+.app
+    background: #e7e7e3
+.navbar
+    height: 10vh
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 0 10px 0 10px
+    .h-title , .ulbar li .links
+        font-family: $fontType
+        padding: 6px 10px
+        border-radius: 25px
+        font-size: 1.3rem
+        color: #ffffff
+        transition: all .5s
+        color: $mainColor
+        &:hover
+            transition: all .5s
+            color: #fff
+            background-color: $mainColor
+            box-shadow: 0 0 10px $mainColor
+    .ulbar
+        display: flex
+        align-items: center
+        justify-content: space-around
+        width: 35%
+        padding: 20px
+        li .links
+            color: #ffffff
+            font-family: $fontType
+            font-size: 1.1rem
+            color: $mainColor
+        li
+            &:nth-child(3)
+                .links
+                    background: $mainColor
+                    color: #fff
+                    &:hover
+                        background: $mainColor
+                        color: #ffffffff
+.home
+    display: grid
+    grid-template-rows: repeat(1fr ,auto)
+    grid-template-columns: 1fr
+    grid-gap: 50px
+    min-height: 90vh
+    align-items: center
+    justify-items: center
+    padding-top: 100px
+
+    .blogs-hanlder
+
+        display: flex
+        align-items: start
+        justify-content: space-around
+        flex-direction: column
+        height: 50vh
+        width: 80%
+        padding: 20px
+        border-radius: 25px
+        // border: 2px solid $mainColor
+        box-shadow: 5px 5px 10px $mainColor
+        transition: all .5s
+        font-family: $fontType
+
+        &:hover
+            background: #a516e7c7
+            .blog-auther , .blog-content
+                color: #fff
+                font-family: $fontType
+.create-blog
+    height: 90vh
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    .form
+        height: 500px
+        width: 300px
+        display: flex
+        align-items: center
+        justify-content: space-around
+        flex-direction: column
+        border-radius: 25px
+        border: 2px solid $mainColor
+        padding: 30px
+        h2
+            font-family: $fontType
+
+        .input-div-form
+            height: 400px
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            input , textarea
+                width: 100%
+                margin-top: 20px
+        .submit-form
+            width: 100%
+            input
+                width: 100%
+                padding: 10px 0 10px 0
+                border-radius: 15px
+                background: $mainColor
+                font-size: 18px
+                color: #ffffff
+                font-family: $fontType
+                border: none
+                cursor: pointer
+                &::focus
+                    outline: noen
+.info
+    height: 90vh
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    .info-contaner
+        width: 400px
+        height: 500px
+        border-radius: 25px
+        display: flex
+        align-items: center
+        justify-content: space-evenly
+        flex-direction: column
+        padding: 20px
+        border: 2px solid $mainColor
+        h2 , p
+            color: $mainColor
+            font-family: $fontType
+            text-shadow: 0 0 1px #111
